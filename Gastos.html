@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+<body>
+<script type="text/javascript">
+var x=1;
+var empleados;
+var sueldos;
+var mayores=0;
+var menores=0;
+var gasto=0;
+while(x<=5)
+{
+	sueldos=prompt('Ingrese sueldo del empleado','');
+
+	while(sueldos<100||sueldos>500)
+	{
+		sueldos=prompt('El sueldo debe estar comprendido entre 100 y 500. Ingrese sueldo del empleado','');
+	}
+	if(sueldos<300)
+	{
+		menores=menores+1;
+	}
+	else if(sueldos>300)
+	{
+		mayores=mayores+1;
+	}
+	sueldos=parseInt(sueldos);
+	gasto=gasto+sueldos;
+	x=x+1;
+}
+document.write(mayores +' trabajadores cobran más de 300.' +menores +'cobran menos de 300. El gasto de la empresa es' +gasto);
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+  var nombre;
+  var nota1;
+  var nota2;
+  var nota3;
+  nombre=prompt('Ingrese nombre:','');
+  nota1=prompt('Ingrese su nota:','');
+  nota2=prompt('Ingrese su nota:','');
+  nota3=prompt('Ingrese su nota:','');
+  var suma=parseInt(nota1)+parseInt(nota2)+parseInt(nota3)
+  var promedio=suma/3
+  if (promedio>=7)
+  {
+    document.write(nombre+' esta aprobado con un '+promedio);
+  }
+  if (promedio<7)
+   {
+     document.write(nombre+' esta reprobado con un '+promedio);
+   }
+</script>
+</body>
+</html>

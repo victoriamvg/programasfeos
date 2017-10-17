@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+var postulante;
+var preguntas;
+var respuestas;
+var porcentaje;
+postulante=prompt('ingrese nombre:','');
+preguntas=prompt('ingrese cantidad de preguntas:','');
+respuestas=prompt('ingrese cantidad de respuestas correctas:','');
+preguntas=parseInt(preguntas);
+Respuestas=parseInt(respuestas);
+porcentaje=(100*respuestas)/preguntas;
+document.write(postulante);
+document.write('<br>');
+document.write('porcentaje:'+porcentaje);
+document.write('<br>');
+if(porcentaje>=90) 
+{
+	document.write('Nivel en que se encuentra: Superior');
+}
+else if(porcentaje>=75&&porcentaje<90)
+{
+	 document.write('Nivel en que se encuentra: Medio');
+}
+else if(porcentaje>=50&&porcentaje<75)
+{
+	document.write('Nivel en que se encuentra: Regular');
+}
+else if (porcentaje<50)
+{
+	document.write('Nivel en que se encuentra: Fuera de nivel');
+}
+
+</script>
+</body>
+</html>
+
+

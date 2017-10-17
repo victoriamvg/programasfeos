@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+<body>
+<script type="text/javascript">
+var x=1;
+var mayor=0;
+var menor=0;
+var notas;
+while(x<=10)
+{
+	notas=prompt('ingrese notas','');
+	notas=parseInt(notas);
+	if(notas>=7)
+	{
+		mayor=mayor+1
+	}
+	else if(notas<7)
+	{
+		menor=menor+1
+	}
+	x=x+1;
+}
+document.write('Tienen notar mayor a 7: '+mayor +'estudiantes y tienen nota menor a 7: ' +menor +' estudiantes');
+
+</script>
+</body>
+</html>
